@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ImageView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/iv"
+    /> 
+   <LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+		<TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="20sp"
+		    android:id="@+id/bigtv"
+		    />
+		<TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="10sp"
+		    android:id="@+id/smalltv"
+		    />
+    </LinearLayout>
+<Button  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+     android:text="button"
+    android:id="@+id/btn"
+    />
+<CheckBox  
+   android:layout_width="wrap_content" 
+   android:layout_height="wrap_content" 
+   android:id="@+id/cb"
+   />
+</LinearLayout>
