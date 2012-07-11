@@ -3,6 +3,7 @@
  */
 package com.himi;
 
+import java.security.PrivateKey;
 import java.util.List;
 import java.util.Map;
 
@@ -57,7 +58,7 @@ public class MySimpleAdapter extends BaseAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		convertView = mInflater.inflate(layoutID, null);
-		convertView = mInflater.inflate(layoutID, null);
+//		convertView = mInflater.inflate(layoutID, null);
 		for (int i = 0; i < flag.length; i++) {//±¸×¢1
 			if (convertView.findViewById(ItemIDs[i]) instanceof ImageView) {
 				ImageView iv = (ImageView) convertView.findViewById(ItemIDs[i]);
@@ -73,11 +74,7 @@ public class MySimpleAdapter extends BaseAdapter {
 		addListener(convertView);
 		return convertView;
 	}
-/**
- * 
- * ±¸×¢3
- */
-	public void addListener(View convertView) {
+	private void addListener(View convertView) {
 		((Button)convertView.findViewById(R.id.btn)).setOnClickListener(
 				new View.OnClickListener() {
 					@Override

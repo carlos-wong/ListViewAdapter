@@ -43,6 +43,7 @@ public class MainActivity extends Activity {
 		 R.layout.main, new String[] {
 		 "item1_imageivew", "item1_bigtv", "item1_smalltv" }, new int[] {
 		 R.id.iv, R.id.bigtv, R.id.smalltv });
+		 
 		// 为列表视图设置适配器（将数据映射到列表视图中）
 		listView.setAdapter(adapter);
 		// //显示列表视图
